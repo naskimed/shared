@@ -1,0 +1,169 @@
+/* styles.css */
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa; /* Changed background color */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.run-button {
+  display: inline-block;
+  background-color: #2ecc71; /* Changed button background color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 30px;
+  font-size: 18px; /* Increased font size for the button text */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.run-button:hover {
+  background-color: #27ae60; /* Darker shade on hover */
+}
+
+h1 {
+  text-align: left;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.input-column {
+  width: 50%;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .input-column {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.section-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Input section styles */
+.input-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.behavior-section {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.input-row {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Simulation section styles */
+.simulation-section {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Graph styles */
+.graph {
+  margin-bottom: 30px;
+}
+
+/* Sell behavior styles */
+.behavior-section:nth-child(1) {
+  background-color: #ffebee; /* Changed sell behavior background color */
+  border-color: #ffcdd2; /* Changed sell behavior border color */
+}
+
+/* Buy behavior styles */
+.behavior-section:nth-child(2) {
+  background-color: #e3f2fd; /* Changed buy behavior background color */
+  border-color: #bbdefb; /* Changed buy behavior border color */
+}
+
+/* Scale Down behavior styles */
+.behavior-section:nth-child(3) {
+  background-color: #f0f9ff; /* Changed scale down behavior background color */
+  border-color: #90caf9; /* Changed scale down behavior border color */
+}
+
+/* Scale Up behavior styles */
+.behavior-section:nth-child(4) {
+  background-color: #f9fbe7; /* Changed scale up behavior background color */
+  border-color: #f0f4c3; /* Changed scale up behavior border color */
+}
+
+.behavior-section:nth-child(5) {
+  background-color: #fff9c4; /* Changed behavior background color */
+  border-color: #fff59d; /* Changed behavior border color */
+}
+
+/* Graph title styles */
+.graph-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #555;
+  text-transform: uppercase;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .input-section {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .simulation-section {
+    padding: 10px;
+  }
+
+  #steps-display {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 5px;
+  }
+}
+
+#steps-display {
+  margin: 10px;
+}
