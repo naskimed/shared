@@ -1,0 +1,13 @@
+
+version: '3'
+
+services:
+
+
+  web_abm_dash: &webabmdash
+    build:
+      context: ./app
+      dockerfile: Dockerfile.dev
+    ports:
+      - 8150:8150
+    restart: always
